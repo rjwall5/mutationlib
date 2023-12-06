@@ -1,0 +1,1419 @@
+#Created on Wed Sept 1 13:32:16 2021 by Richard Wall
+
+import pysam, argparse
+
+parser = argparse.ArgumentParser(description='Counts sequences from P. knowlesi KRS mutation library')
+parser.add_argument('-i',nargs='?',dest='infile',help='Input BAM file')
+
+args = parser.parse_args()
+
+args.KRS19TTT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTTTTTTTATTGGGCATATGCT' #sequence KRS19TTT		
+countKRS19TTT = 0		
+		
+bfKRS19TTT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TTT:		
+	if args.KRS19TTT in line.seq:	
+		countKRS19TTT += 1
+		
+print 'KRS19TTT' , args.KRS19TTT, countKRS19TTT		
+		
+args.KRS19TTC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTTCTTTTATTGGGCATATGCT' #sequence KRS19TTC		
+countKRS19TTC = 0		
+		
+bfKRS19TTC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TTC:		
+	if args.KRS19TTC in line.seq:	
+		countKRS19TTC += 1
+		
+print 'KRS19TTC' , args.KRS19TTC, countKRS19TTC		
+		
+args.KRS19TTA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTTATTTTATTGGGCATATGCT' #sequence KRS19TTA		
+countKRS19TTA = 0		
+		
+bfKRS19TTA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TTA:		
+	if args.KRS19TTA in line.seq:	
+		countKRS19TTA += 1
+		
+print 'KRS19TTA' , args.KRS19TTA, countKRS19TTA		
+		
+args.KRS19TTG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTTGTTTTATTGGGCATATGCT' #sequence KRS19TTG		
+countKRS19TTG = 0		
+		
+bfKRS19TTG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TTG:		
+	if args.KRS19TTG in line.seq:	
+		countKRS19TTG += 1
+		
+print 'KRS19TTG' , args.KRS19TTG, countKRS19TTG		
+		
+args.KRS19CTT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCTTTTTTATTGGGCATATGCT' #sequence KRS19CTT		
+countKRS19CTT = 0		
+		
+bfKRS19CTT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CTT:		
+	if args.KRS19CTT in line.seq:	
+		countKRS19CTT += 1
+		
+print 'KRS19CTT' , args.KRS19CTT, countKRS19CTT		
+		
+args.KRS19CTC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCTCTTTTATTGGGCATATGCT' #sequence KRS19CTC		
+countKRS19CTC = 0		
+		
+bfKRS19CTC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CTC:		
+	if args.KRS19CTC in line.seq:	
+		countKRS19CTC += 1
+		
+print 'KRS19CTC' , args.KRS19CTC, countKRS19CTC		
+		
+args.KRS19CTA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCTATTTTATTGGGCATATGCT' #sequence KRS19CTA		
+countKRS19CTA = 0		
+		
+bfKRS19CTA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CTA:		
+	if args.KRS19CTA in line.seq:	
+		countKRS19CTA += 1
+		
+print 'KRS19CTA' , args.KRS19CTA, countKRS19CTA		
+		
+args.KRS19CTG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCTGTTTTATTGGGCATATGCT' #sequence KRS19CTG		
+countKRS19CTG = 0		
+		
+bfKRS19CTG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CTG:		
+	if args.KRS19CTG in line.seq:	
+		countKRS19CTG += 1
+		
+print 'KRS19CTG' , args.KRS19CTG, countKRS19CTG		
+		
+args.KRS19ATT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTATTTTTTATTGGGCATATGCT' #sequence KRS19ATT		
+countKRS19ATT = 0		
+		
+bfKRS19ATT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19ATT:		
+	if args.KRS19ATT in line.seq:	
+		countKRS19ATT += 1
+		
+print 'KRS19ATT' , args.KRS19ATT, countKRS19ATT		
+		
+args.KRS19ATC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTATCTTTTATTGGGCATATGCT' #sequence KRS19ATC		
+countKRS19ATC = 0		
+		
+bfKRS19ATC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19ATC:		
+	if args.KRS19ATC in line.seq:	
+		countKRS19ATC += 1
+		
+print 'KRS19ATC' , args.KRS19ATC, countKRS19ATC		
+		
+args.KRS19ATA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTATATTTTATTGGGCATATGCT' #sequence KRS19ATA		
+countKRS19ATA = 0		
+		
+bfKRS19ATA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19ATA:		
+	if args.KRS19ATA in line.seq:	
+		countKRS19ATA += 1
+		
+print 'KRS19ATA' , args.KRS19ATA, countKRS19ATA		
+		
+args.KRS19ATG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTATGTTTTATTGGGCATATGCT' #sequence KRS19ATG		
+countKRS19ATG = 0		
+		
+bfKRS19ATG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19ATG:		
+	if args.KRS19ATG in line.seq:	
+		countKRS19ATG += 1
+		
+print 'KRS19ATG' , args.KRS19ATG, countKRS19ATG		
+		
+args.KRS19GTT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGTTTTTTATTGGGCATATGCT' #sequence KRS19GTT		
+countKRS19GTT = 0		
+		
+bfKRS19GTT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GTT:		
+	if args.KRS19GTT in line.seq:	
+		countKRS19GTT += 1
+		
+print 'KRS19GTT' , args.KRS19GTT, countKRS19GTT		
+		
+args.KRS19GTC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGTCTTTTATTGGGCATATGCT' #sequence KRS19GTC		
+countKRS19GTC = 0		
+		
+bfKRS19GTC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GTC:		
+	if args.KRS19GTC in line.seq:	
+		countKRS19GTC += 1
+		
+print 'KRS19GTC' , args.KRS19GTC, countKRS19GTC		
+		
+args.KRS19GTA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGTATTTTATTGGGCATATGCT' #sequence KRS19GTA		
+countKRS19GTA = 0		
+		
+bfKRS19GTA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GTA:		
+	if args.KRS19GTA in line.seq:	
+		countKRS19GTA += 1
+		
+print 'KRS19GTA' , args.KRS19GTA, countKRS19GTA		
+		
+args.KRS19GTG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGTGTTTTATTGGGCATATGCT' #sequence KRS19GTG
+
+countKRS19GTG = 0
+		
+bfKRS19GTG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GTG:		
+	if args.KRS19GTG in line.seq:	
+		countKRS19GTG += 1
+		
+print 'KRS19GTG' , args.KRS19GTG, countKRS19GTG		
+		
+args.KRS19TCT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTCTTTTTATTGGGCATATGCT' #sequence KRS19TCT		
+countKRS19TCT = 0		
+		
+bfKRS19TCT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TCT:		
+	if args.KRS19TCT in line.seq:	
+		countKRS19TCT += 1
+		
+print 'KRS19TCT' , args.KRS19TCT, countKRS19TCT		
+		
+args.KRS19TCC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTCCTTTTATTGGGCATATGCT' #sequence KRS19TCC		
+countKRS19TCC = 0		
+		
+bfKRS19TCC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TCC:		
+	if args.KRS19TCC in line.seq:	
+		countKRS19TCC += 1
+		
+print 'KRS19TCC' , args.KRS19TCC, countKRS19TCC		
+		
+args.KRS19TCA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTCATTTTATTGGGCATATGCT' #sequence KRS19TCA		
+countKRS19TCA = 0		
+		
+bfKRS19TCA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TCA:		
+	if args.KRS19TCA in line.seq:	
+		countKRS19TCA += 1
+		
+print 'KRS19TCA' , args.KRS19TCA, countKRS19TCA		
+		
+args.KRS19TCG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTCGTTTTATTGGGCATATGCT' #sequence KRS19TCG		
+countKRS19TCG = 0		
+		
+bfKRS19TCG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TCG:		
+	if args.KRS19TCG in line.seq:	
+		countKRS19TCG += 1
+		
+print 'KRS19TCG' , args.KRS19TCG, countKRS19TCG		
+		
+args.KRS19CCT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCCTTTTTATTGGGCATATGCT' #sequence KRS19CCT		
+countKRS19CCT = 0		
+		
+bfKRS19CCT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CCT:		
+	if args.KRS19CCT in line.seq:	
+		countKRS19CCT += 1
+		
+print 'KRS19CCT' , args.KRS19CCT, countKRS19CCT		
+		
+args.KRS19CCC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCCCTTTTATTGGGCATATGCT' #sequence KRS19CCC		
+countKRS19CCC = 0		
+		
+bfKRS19CCC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CCC:		
+	if args.KRS19CCC in line.seq:	
+		countKRS19CCC += 1
+		
+print 'KRS19CCC' , args.KRS19CCC, countKRS19CCC		
+		
+args.KRS19CCA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCCATTTTATTGGGCATATGCT' #sequence KRS19CCA		
+countKRS19CCA = 0		
+		
+bfKRS19CCA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CCA:		
+	if args.KRS19CCA in line.seq:	
+		countKRS19CCA += 1
+		
+print 'KRS19CCA' , args.KRS19CCA, countKRS19CCA		
+		
+args.KRS19CCG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCCGTTTTATTGGGCATATGCT' #sequence KRS19CCG		
+countKRS19CCG = 0		
+		
+bfKRS19CCG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CCG:		
+	if args.KRS19CCG in line.seq:	
+		countKRS19CCG += 1
+		
+print 'KRS19CCG' , args.KRS19CCG, countKRS19CCG		
+		
+args.KRS19ACT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTACTTTTTATTGGGCATATGCT' #sequence KRS19ACT		
+countKRS19ACT = 0		
+		
+bfKRS19ACT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19ACT:		
+	if args.KRS19ACT in line.seq:	
+		countKRS19ACT += 1
+		
+print 'KRS19ACT' , args.KRS19ACT, countKRS19ACT		
+		
+args.KRS19ACC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTACCTTTTATTGGGCATATGCT' #sequence KRS19ACC		
+countKRS19ACC = 0		
+		
+bfKRS19ACC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19ACC:		
+	if args.KRS19ACC in line.seq:	
+		countKRS19ACC += 1
+		
+print 'KRS19ACC' , args.KRS19ACC, countKRS19ACC		
+		
+args.KRS19ACA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTACATTTTATTGGGCATATGCT' #sequence KRS19ACA		
+countKRS19ACA = 0		
+		
+bfKRS19ACA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19ACA:		
+	if args.KRS19ACA in line.seq:	
+		countKRS19ACA += 1
+		
+print 'KRS19ACA' , args.KRS19ACA, countKRS19ACA		
+		
+args.KRS19ACG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTACGTTTTATTGGGCATATGCT' #sequence KRS19ACG		
+countKRS19ACG = 0		
+		
+bfKRS19ACG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19ACG:		
+	if args.KRS19ACG in line.seq:	
+		countKRS19ACG += 1
+		
+print 'KRS19ACG' , args.KRS19ACG, countKRS19ACG		
+		
+args.KRS19GCT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGCTTTTTATTGGGCATATGCT' #sequence KRS19GCT		
+countKRS19GCT = 0		
+		
+bfKRS19GCT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GCT:		
+	if args.KRS19GCT in line.seq:	
+		countKRS19GCT += 1
+		
+print 'KRS19GCT' , args.KRS19GCT, countKRS19GCT		
+		
+args.KRS19GCC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGCCTTTTATTGGGCATATGCT' #sequence KRS19GCC		
+countKRS19GCC = 0		
+		
+bfKRS19GCC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GCC:		
+	if args.KRS19GCC in line.seq:	
+		countKRS19GCC += 1
+		
+print 'KRS19GCC' , args.KRS19GCC, countKRS19GCC		
+		
+args.KRS19GCA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGCATTTTATTGGGCATATGCT' #sequence KRS19GCA		
+countKRS19GCA = 0		
+		
+bfKRS19GCA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GCA:		
+	if args.KRS19GCA in line.seq:	
+		countKRS19GCA += 1
+		
+print 'KRS19GCA' , args.KRS19GCA, countKRS19GCA		
+		
+args.KRS19GCG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGCGTTTTATTGGGCATATGCT' #sequence KRS19GCG		
+countKRS19GCG = 0		
+		
+bfKRS19GCG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GCG:		
+	if args.KRS19GCG in line.seq:	
+		countKRS19GCG += 1
+		
+print 'KRS19GCG' , args.KRS19GCG, countKRS19GCG		
+		
+args.KRS19TAT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTATTTTTATTGGGCATATGCT' #sequence KRS19TAT		
+countKRS19TAT = 0		
+		
+bfKRS19TAT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TAT:		
+	if args.KRS19TAT in line.seq:	
+		countKRS19TAT += 1
+		
+print 'KRS19TAT' , args.KRS19TAT, countKRS19TAT		
+		
+args.KRS19TAC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTACTTTTATTGGGCATATGCT' #sequence KRS19TAC		
+countKRS19TAC = 0		
+		
+bfKRS19TAC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TAC:		
+	if args.KRS19TAC in line.seq:	
+		countKRS19TAC += 1
+		
+print 'KRS19TAC' , args.KRS19TAC, countKRS19TAC		
+		
+args.KRS19TAA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTAATTTTATTGGGCATATGCT' #sequence KRS19TAA		
+countKRS19TAA = 0		
+		
+bfKRS19TAA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TAA:		
+	if args.KRS19TAA in line.seq:	
+		countKRS19TAA += 1
+		
+print 'KRS19TAA' , args.KRS19TAA, countKRS19TAA		
+		
+args.KRS19TAG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTAGTTTTATTGGGCATATGCT' #sequence KRS19TAG		
+countKRS19TAG = 0		
+		
+bfKRS19TAG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TAG:		
+	if args.KRS19TAG in line.seq:	
+		countKRS19TAG += 1
+		
+print 'KRS19TAG' , args.KRS19TAG, countKRS19TAG		
+		
+args.KRS19CAT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCATTTTTATTGGGCATATGCT' #sequence KRS19CAT		
+countKRS19CAT = 0		
+		
+bfKRS19CAT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CAT:		
+	if args.KRS19CAT in line.seq:	
+		countKRS19CAT += 1
+		
+print 'KRS19CAT' , args.KRS19CAT, countKRS19CAT		
+		
+args.KRS19CAC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCACTTTTATTGGGCATATGCT' #sequence KRS19CAC		
+countKRS19CAC = 0		
+		
+bfKRS19CAC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CAC:		
+	if args.KRS19CAC in line.seq:	
+		countKRS19CAC += 1
+		
+print 'KRS19CAC' , args.KRS19CAC, countKRS19CAC		
+		
+args.KRS19CAA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCAATTTTATTGGGCATATGCT' #sequence KRS19CAA		
+countKRS19CAA = 0		
+		
+bfKRS19CAA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CAA:		
+	if args.KRS19CAA in line.seq:	
+		countKRS19CAA += 1
+		
+print 'KRS19CAA' , args.KRS19CAA, countKRS19CAA		
+		
+args.KRS19CAG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCAGTTTTATTGGGCATATGCT' #sequence KRS19CAG		
+countKRS19CAG = 0		
+		
+bfKRS19CAG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CAG:		
+	if args.KRS19CAG in line.seq:	
+		countKRS19CAG += 1
+		
+print 'KRS19CAG' , args.KRS19CAG, countKRS19CAG		
+		
+args.KRS19AAT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTAATTTTTATTGGGCATATGCT' #sequence KRS19AAT		
+countKRS19AAT = 0		
+		
+bfKRS19AAT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19AAT:		
+	if args.KRS19AAT in line.seq:	
+		countKRS19AAT += 1
+		
+print 'KRS19AAT' , args.KRS19AAT, countKRS19AAT		
+		
+args.KRS19AAC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTAACTTTTATTGGGCATATGCT' #sequence KRS19AAC		
+countKRS19AAC = 0		
+		
+bfKRS19AAC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19AAC:		
+	if args.KRS19AAC in line.seq:	
+		countKRS19AAC += 1
+		
+print 'KRS19AAC' , args.KRS19AAC, countKRS19AAC		
+		
+args.KRS19AAA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTAAATTTTATTGGGCATATGCT' #sequence KRS19AAA		
+countKRS19AAA = 0		
+		
+bfKRS19AAA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19AAA:		
+	if args.KRS19AAA in line.seq:	
+		countKRS19AAA += 1
+		
+print 'KRS19AAA' , args.KRS19AAA, countKRS19AAA		
+		
+args.KRS19AAG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTAAGTTTTATTGGGCATATGCT' #sequence KRS19AAG		
+countKRS19AAG = 0		
+		
+bfKRS19AAG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19AAG:		
+	if args.KRS19AAG in line.seq:	
+		countKRS19AAG += 1
+		
+print 'KRS19AAG' , args.KRS19AAG, countKRS19AAG		
+		
+args.KRS19GAT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGATTTTTATTGGGCATATGCT' #sequence KRS19GAT		
+countKRS19GAT = 0		
+		
+bfKRS19GAT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GAT:		
+	if args.KRS19GAT in line.seq:	
+		countKRS19GAT += 1
+		
+print 'KRS19GAT' , args.KRS19GAT, countKRS19GAT		
+		
+args.KRS19GAC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGACTTTTATTGGGCATATGCT' #sequence KRS19GAC		
+countKRS19GAC = 0		
+		
+bfKRS19GAC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GAC:		
+	if args.KRS19GAC in line.seq:	
+		countKRS19GAC += 1
+		
+print 'KRS19GAC' , args.KRS19GAC, countKRS19GAC		
+		
+args.KRS19GAA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATTTTATTGGGCATATGCT' #sequence KRS19GAA		
+countKRS19GAA = 0		
+		
+bfKRS19GAA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GAA:		
+	if args.KRS19GAA in line.seq:	
+		countKRS19GAA += 1
+		
+print 'KRS19GAA' , args.KRS19GAA, countKRS19GAA		
+		
+args.KRS19GAG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAGTTTTATTGGGCATATGCT' #sequence KRS19GAG		
+countKRS19GAG = 0		
+		
+bfKRS19GAG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GAG:		
+	if args.KRS19GAG in line.seq:	
+		countKRS19GAG += 1
+		
+print 'KRS19GAG' , args.KRS19GAG, countKRS19GAG		
+		
+args.KRS19TGT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTGTTTTTATTGGGCATATGCT' #sequence KRS19TGT		
+countKRS19TGT = 0		
+		
+bfKRS19TGT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TGT:		
+	if args.KRS19TGT in line.seq:	
+		countKRS19TGT += 1
+		
+print 'KRS19TGT' , args.KRS19TGT, countKRS19TGT		
+		
+args.KRS19TGC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTGCTTTTATTGGGCATATGCT' #sequence KRS19TGC		
+countKRS19TGC = 0		
+		
+bfKRS19TGC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TGC:		
+	if args.KRS19TGC in line.seq:	
+		countKRS19TGC += 1
+		
+print 'KRS19TGC' , args.KRS19TGC, countKRS19TGC		
+		
+args.KRS19TGA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTGATTTTATTGGGCATATGCT' #sequence KRS19TGA		
+countKRS19TGA = 0		
+		
+bfKRS19TGA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TGA:		
+	if args.KRS19TGA in line.seq:	
+		countKRS19TGA += 1
+		
+print 'KRS19TGA' , args.KRS19TGA, countKRS19TGA		
+		
+args.KRS19TGG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTTGGTTTTATTGGGCATATGCT' #sequence KRS19TGG		
+countKRS19TGG = 0		
+		
+bfKRS19TGG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19TGG:		
+	if args.KRS19TGG in line.seq:	
+		countKRS19TGG += 1
+		
+print 'KRS19TGG' , args.KRS19TGG, countKRS19TGG		
+		
+args.KRS19CGT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCGTTTTTATTGGGCATATGCT' #sequence KRS19CGT		
+countKRS19CGT = 0		
+		
+bfKRS19CGT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CGT:		
+	if args.KRS19CGT in line.seq:	
+		countKRS19CGT += 1
+		
+print 'KRS19CGT' , args.KRS19CGT, countKRS19CGT		
+		
+args.KRS19CGC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCGCTTTTATTGGGCATATGCT' #sequence KRS19CGC		
+countKRS19CGC = 0		
+		
+bfKRS19CGC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CGC:		
+	if args.KRS19CGC in line.seq:	
+		countKRS19CGC += 1
+		
+print 'KRS19CGC' , args.KRS19CGC, countKRS19CGC		
+		
+args.KRS19CGA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCGATTTTATTGGGCATATGCT' #sequence KRS19CGA		
+countKRS19CGA = 0		
+		
+bfKRS19CGA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CGA:		
+	if args.KRS19CGA in line.seq:	
+		countKRS19CGA += 1
+		
+print 'KRS19CGA' , args.KRS19CGA, countKRS19CGA		
+		
+args.KRS19CGG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTCGGTTTTATTGGGCATATGCT' #sequence KRS19CGG		
+countKRS19CGG = 0		
+		
+bfKRS19CGG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19CGG:		
+	if args.KRS19CGG in line.seq:	
+		countKRS19CGG += 1
+		
+print 'KRS19CGG' , args.KRS19CGG, countKRS19CGG		
+		
+args.KRS19AGT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTAGTTTTTATTGGGCATATGCT' #sequence KRS19AGT		
+countKRS19AGT = 0		
+		
+bfKRS19AGT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19AGT:		
+	if args.KRS19AGT in line.seq:	
+		countKRS19AGT += 1
+		
+print 'KRS19AGT' , args.KRS19AGT, countKRS19AGT		
+		
+args.KRS19AGC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTAGCTTTTATTGGGCATATGCT' #sequence KRS19AGC		
+countKRS19AGC = 0		
+		
+bfKRS19AGC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19AGC:		
+	if args.KRS19AGC in line.seq:	
+		countKRS19AGC += 1
+		
+print 'KRS19AGC' , args.KRS19AGC, countKRS19AGC		
+		
+args.KRS19AGA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTAGATTTTATTGGGCATATGCT' #sequence KRS19AGA		
+countKRS19AGA = 0		
+		
+bfKRS19AGA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19AGA:		
+	if args.KRS19AGA in line.seq:	
+		countKRS19AGA += 1
+		
+print 'KRS19AGA' , args.KRS19AGA, countKRS19AGA		
+		
+args.KRS19AGG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTAGGTTTTATTGGGCATATGCT' #sequence KRS19AGG		
+countKRS19AGG = 0		
+		
+bfKRS19AGG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19AGG:		
+	if args.KRS19AGG in line.seq:	
+		countKRS19AGG += 1
+		
+print 'KRS19AGG' , args.KRS19AGG, countKRS19AGG		
+		
+args.KRS19GGT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGGTTTTTATTGGGCATATGCT' #sequence KRS19GGT		
+countKRS19GGT = 0		
+		
+bfKRS19GGT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GGT:		
+	if args.KRS19GGT in line.seq:	
+		countKRS19GGT += 1
+		
+print 'KRS19GGT' , args.KRS19GGT, countKRS19GGT		
+		
+args.KRS19GGC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGGCTTTTATTGGGCATATGCT' #sequence KRS19GGC		
+countKRS19GGC = 0		
+		
+bfKRS19GGC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GGC:		
+	if args.KRS19GGC in line.seq:	
+		countKRS19GGC += 1
+		
+print 'KRS19GGC' , args.KRS19GGC, countKRS19GGC		
+		
+args.KRS19GGA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGGATTTTATTGGGCATATGCT' #sequence KRS19GGA		
+countKRS19GGA = 0		
+		
+bfKRS19GGA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GGA:		
+	if args.KRS19GGA in line.seq:	
+		countKRS19GGA += 1
+		
+print 'KRS19GGA' , args.KRS19GGA, countKRS19GGA		
+		
+args.KRS19GGG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGGGTTTTATTGGGCATATGCT' #sequence KRS19GGG		
+countKRS19GGG = 0		
+		
+bfKRS19GGG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS19GGG:		
+	if args.KRS19GGG in line.seq:	
+		countKRS19GGG += 1
+		
+print 'KRS19GGG' , args.KRS19GGG, countKRS19GGG		
+
+args.KRS20TTT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATTTTATTGGGCATATGCT' #sequence KRS20TTT		
+countKRS20TTT = 0		
+		
+bfKRS20TTT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TTT:		
+	if args.KRS20TTT in line.seq:	
+		countKRS20TTT += 1
+		
+print 'KRS20TTT' , args.KRS20TTT, countKRS20TTT		
+		
+args.KRS20TTC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATTCTATTGGGCATATGCT' #sequence KRS20TTC		
+countKRS20TTC = 0		
+		
+bfKRS20TTC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TTC:		
+	if args.KRS20TTC in line.seq:	
+		countKRS20TTC += 1
+		
+print 'KRS20TTC' , args.KRS20TTC, countKRS20TTC		
+		
+args.KRS20TTA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATTATATTGGGCATATGCT' #sequence KRS20TTA		
+countKRS20TTA = 0		
+		
+bfKRS20TTA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TTA:		
+	if args.KRS20TTA in line.seq:	
+		countKRS20TTA += 1
+		
+print 'KRS20TTA' , args.KRS20TTA, countKRS20TTA		
+		
+args.KRS20TTG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATTGTATTGGGCATATGCT' #sequence KRS20TTG		
+countKRS20TTG = 0		
+		
+bfKRS20TTG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TTG:		
+	if args.KRS20TTG in line.seq:	
+		countKRS20TTG += 1
+		
+print 'KRS20TTG' , args.KRS20TTG, countKRS20TTG		
+		
+args.KRS20CTT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACTTTATTGGGCATATGCT' #sequence KRS20CTT		
+countKRS20CTT = 0		
+		
+bfKRS20CTT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CTT:		
+	if args.KRS20CTT in line.seq:	
+		countKRS20CTT += 1
+		
+print 'KRS20CTT' , args.KRS20CTT, countKRS20CTT		
+		
+args.KRS20CTC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACTCTATTGGGCATATGCT' #sequence KRS20CTC		
+countKRS20CTC = 0		
+		
+bfKRS20CTC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CTC:		
+	if args.KRS20CTC in line.seq:	
+		countKRS20CTC += 1
+		
+print 'KRS20CTC' , args.KRS20CTC, countKRS20CTC		
+		
+args.KRS20CTA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACTATATTGGGCATATGCT' #sequence KRS20CTA		
+countKRS20CTA = 0		
+		
+bfKRS20CTA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CTA:		
+	if args.KRS20CTA in line.seq:	
+		countKRS20CTA += 1
+		
+print 'KRS20CTA' , args.KRS20CTA, countKRS20CTA		
+		
+args.KRS20CTG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACTGTATTGGGCATATGCT' #sequence KRS20CTG		
+countKRS20CTG = 0		
+		
+bfKRS20CTG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CTG:		
+	if args.KRS20CTG in line.seq:	
+		countKRS20CTG += 1
+		
+print 'KRS20CTG' , args.KRS20CTG, countKRS20CTG		
+		
+args.KRS20ATT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAATTTATTGGGCATATGCT' #sequence KRS20ATT		
+countKRS20ATT = 0		
+		
+bfKRS20ATT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20ATT:		
+	if args.KRS20ATT in line.seq:	
+		countKRS20ATT += 1
+		
+print 'KRS20ATT' , args.KRS20ATT, countKRS20ATT		
+		
+args.KRS20ATC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAATCTATTGGGCATATGCT' #sequence KRS20ATC		
+countKRS20ATC = 0		
+		
+bfKRS20ATC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20ATC:		
+	if args.KRS20ATC in line.seq:	
+		countKRS20ATC += 1
+		
+print 'KRS20ATC' , args.KRS20ATC, countKRS20ATC		
+		
+args.KRS20ATA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAATATATTGGGCATATGCT' #sequence KRS20ATA		
+countKRS20ATA = 0		
+		
+bfKRS20ATA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20ATA:		
+	if args.KRS20ATA in line.seq:	
+		countKRS20ATA += 1
+		
+print 'KRS20ATA' , args.KRS20ATA, countKRS20ATA		
+		
+args.KRS20ATG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAATGTATTGGGCATATGCT' #sequence KRS20ATG		
+countKRS20ATG = 0		
+		
+bfKRS20ATG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20ATG:		
+	if args.KRS20ATG in line.seq:	
+		countKRS20ATG += 1
+		
+print 'KRS20ATG' , args.KRS20ATG, countKRS20ATG		
+		
+args.KRS20GTT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGTTTATTGGGCATATGCT' #sequence KRS20GTT		
+countKRS20GTT = 0		
+		
+bfKRS20GTT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GTT:		
+	if args.KRS20GTT in line.seq:	
+		countKRS20GTT += 1
+		
+print 'KRS20GTT' , args.KRS20GTT, countKRS20GTT		
+		
+args.KRS20GTC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGTCTATTGGGCATATGCT' #sequence KRS20GTC		
+countKRS20GTC = 0		
+		
+bfKRS20GTC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GTC:		
+	if args.KRS20GTC in line.seq:	
+		countKRS20GTC += 1
+		
+print 'KRS20GTC' , args.KRS20GTC, countKRS20GTC		
+		
+args.KRS20GTA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGTATATTGGGCATATGCT' #sequence KRS20GTA		
+countKRS20GTA = 0		
+		
+bfKRS20GTA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GTA:		
+	if args.KRS20GTA in line.seq:	
+		countKRS20GTA += 1
+		
+print 'KRS20GTA' , args.KRS20GTA, countKRS20GTA		
+		
+args.KRS20GTG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGTGTATTGGGCATATGCT' #sequence KRS20GTG
+
+countKRS20GTG = 0
+		
+bfKRS20GTG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GTG:		
+	if args.KRS20GTG in line.seq:	
+		countKRS20GTG += 1
+		
+print 'KRS20GTG' , args.KRS20GTG, countKRS20GTG		
+		
+args.KRS20TCT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATCTTATTGGGCATATGCT' #sequence KRS20TCT		
+countKRS20TCT = 0		
+		
+bfKRS20TCT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TCT:		
+	if args.KRS20TCT in line.seq:	
+		countKRS20TCT += 1
+		
+print 'KRS20TCT' , args.KRS20TCT, countKRS20TCT		
+		
+args.KRS20TCC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATCCTATTGGGCATATGCT' #sequence KRS20TCC		
+countKRS20TCC = 0		
+		
+bfKRS20TCC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TCC:		
+	if args.KRS20TCC in line.seq:	
+		countKRS20TCC += 1
+		
+print 'KRS20TCC' , args.KRS20TCC, countKRS20TCC		
+		
+args.KRS20TCA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATCATATTGGGCATATGCT' #sequence KRS20TCA		
+countKRS20TCA = 0		
+		
+bfKRS20TCA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TCA:		
+	if args.KRS20TCA in line.seq:	
+		countKRS20TCA += 1
+		
+print 'KRS20TCA' , args.KRS20TCA, countKRS20TCA		
+		
+args.KRS20TCG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATCGTATTGGGCATATGCT' #sequence KRS20TCG		
+countKRS20TCG = 0		
+		
+bfKRS20TCG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TCG:		
+	if args.KRS20TCG in line.seq:	
+		countKRS20TCG += 1
+		
+print 'KRS20TCG' , args.KRS20TCG, countKRS20TCG		
+		
+args.KRS20CCT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACCTTATTGGGCATATGCT' #sequence KRS20CCT		
+countKRS20CCT = 0		
+		
+bfKRS20CCT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CCT:		
+	if args.KRS20CCT in line.seq:	
+		countKRS20CCT += 1
+		
+print 'KRS20CCT' , args.KRS20CCT, countKRS20CCT		
+		
+args.KRS20CCC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACCCTATTGGGCATATGCT' #sequence KRS20CCC		
+countKRS20CCC = 0		
+		
+bfKRS20CCC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CCC:		
+	if args.KRS20CCC in line.seq:	
+		countKRS20CCC += 1
+		
+print 'KRS20CCC' , args.KRS20CCC, countKRS20CCC		
+		
+args.KRS20CCA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACCATATTGGGCATATGCT' #sequence KRS20CCA		
+countKRS20CCA = 0		
+		
+bfKRS20CCA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CCA:		
+	if args.KRS20CCA in line.seq:	
+		countKRS20CCA += 1
+		
+print 'KRS20CCA' , args.KRS20CCA, countKRS20CCA		
+		
+args.KRS20CCG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACCGTATTGGGCATATGCT' #sequence KRS20CCG		
+countKRS20CCG = 0		
+		
+bfKRS20CCG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CCG:		
+	if args.KRS20CCG in line.seq:	
+		countKRS20CCG += 1
+		
+print 'KRS20CCG' , args.KRS20CCG, countKRS20CCG		
+		
+args.KRS20ACT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAACTTATTGGGCATATGCT' #sequence KRS20ACT		
+countKRS20ACT = 0		
+		
+bfKRS20ACT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20ACT:		
+	if args.KRS20ACT in line.seq:	
+		countKRS20ACT += 1
+		
+print 'KRS20ACT' , args.KRS20ACT, countKRS20ACT		
+		
+args.KRS20ACC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAACCTATTGGGCATATGCT' #sequence KRS20ACC		
+countKRS20ACC = 0		
+		
+bfKRS20ACC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20ACC:		
+	if args.KRS20ACC in line.seq:	
+		countKRS20ACC += 1
+		
+print 'KRS20ACC' , args.KRS20ACC, countKRS20ACC		
+		
+args.KRS20ACA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAACATATTGGGCATATGCT' #sequence KRS20ACA		
+countKRS20ACA = 0		
+		
+bfKRS20ACA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20ACA:		
+	if args.KRS20ACA in line.seq:	
+		countKRS20ACA += 1
+		
+print 'KRS20ACA' , args.KRS20ACA, countKRS20ACA		
+		
+args.KRS20ACG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAACGTATTGGGCATATGCT' #sequence KRS20ACG		
+countKRS20ACG = 0		
+		
+bfKRS20ACG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20ACG:		
+	if args.KRS20ACG in line.seq:	
+		countKRS20ACG += 1
+		
+print 'KRS20ACG' , args.KRS20ACG, countKRS20ACG		
+		
+args.KRS20GCT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGCTTATTGGGCATATGCT' #sequence KRS20GCT		
+countKRS20GCT = 0		
+		
+bfKRS20GCT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GCT:		
+	if args.KRS20GCT in line.seq:	
+		countKRS20GCT += 1
+		
+print 'KRS20GCT' , args.KRS20GCT, countKRS20GCT		
+		
+args.KRS20GCC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGCCTATTGGGCATATGCT' #sequence KRS20GCC		
+countKRS20GCC = 0		
+		
+bfKRS20GCC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GCC:		
+	if args.KRS20GCC in line.seq:	
+		countKRS20GCC += 1
+		
+print 'KRS20GCC' , args.KRS20GCC, countKRS20GCC		
+		
+args.KRS20GCA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGCATATTGGGCATATGCT' #sequence KRS20GCA		
+countKRS20GCA = 0		
+		
+bfKRS20GCA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GCA:		
+	if args.KRS20GCA in line.seq:	
+		countKRS20GCA += 1
+		
+print 'KRS20GCA' , args.KRS20GCA, countKRS20GCA		
+		
+args.KRS20GCG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGCGTATTGGGCATATGCT' #sequence KRS20GCG		
+countKRS20GCG = 0		
+		
+bfKRS20GCG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GCG:		
+	if args.KRS20GCG in line.seq:	
+		countKRS20GCG += 1
+		
+print 'KRS20GCG' , args.KRS20GCG, countKRS20GCG		
+		
+args.KRS20TAT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATATTATTGGGCATATGCT' #sequence KRS20TAT		
+countKRS20TAT = 0		
+		
+bfKRS20TAT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TAT:		
+	if args.KRS20TAT in line.seq:	
+		countKRS20TAT += 1
+		
+print 'KRS20TAT' , args.KRS20TAT, countKRS20TAT		
+		
+args.KRS20TAC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATACTATTGGGCATATGCT' #sequence KRS20TAC		
+countKRS20TAC = 0		
+		
+bfKRS20TAC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TAC:		
+	if args.KRS20TAC in line.seq:	
+		countKRS20TAC += 1
+		
+print 'KRS20TAC' , args.KRS20TAC, countKRS20TAC		
+		
+args.KRS20TAA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATAATATTGGGCATATGCT' #sequence KRS20TAA		
+countKRS20TAA = 0		
+		
+bfKRS20TAA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TAA:		
+	if args.KRS20TAA in line.seq:	
+		countKRS20TAA += 1
+		
+print 'KRS20TAA' , args.KRS20TAA, countKRS20TAA		
+		
+args.KRS20TAG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATAGTATTGGGCATATGCT' #sequence KRS20TAG		
+countKRS20TAG = 0		
+		
+bfKRS20TAG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TAG:		
+	if args.KRS20TAG in line.seq:	
+		countKRS20TAG += 1
+		
+print 'KRS20TAG' , args.KRS20TAG, countKRS20TAG		
+		
+args.KRS20CAT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACATTATTGGGCATATGCT' #sequence KRS20CAT		
+countKRS20CAT = 0		
+		
+bfKRS20CAT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CAT:		
+	if args.KRS20CAT in line.seq:	
+		countKRS20CAT += 1
+		
+print 'KRS20CAT' , args.KRS20CAT, countKRS20CAT		
+		
+args.KRS20CAC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACACTATTGGGCATATGCT' #sequence KRS20CAC		
+countKRS20CAC = 0		
+		
+bfKRS20CAC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CAC:		
+	if args.KRS20CAC in line.seq:	
+		countKRS20CAC += 1
+		
+print 'KRS20CAC' , args.KRS20CAC, countKRS20CAC		
+		
+args.KRS20CAA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACAATATTGGGCATATGCT' #sequence KRS20CAA		
+countKRS20CAA = 0		
+		
+bfKRS20CAA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CAA:		
+	if args.KRS20CAA in line.seq:	
+		countKRS20CAA += 1
+		
+print 'KRS20CAA' , args.KRS20CAA, countKRS20CAA		
+		
+args.KRS20CAG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACAGTATTGGGCATATGCT' #sequence KRS20CAG		
+countKRS20CAG = 0		
+		
+bfKRS20CAG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CAG:		
+	if args.KRS20CAG in line.seq:	
+		countKRS20CAG += 1
+		
+print 'KRS20CAG' , args.KRS20CAG, countKRS20CAG		
+		
+args.KRS20AAT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAAATTATTGGGCATATGCT' #sequence KRS20AAT		
+countKRS20AAT = 0		
+		
+bfKRS20AAT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20AAT:		
+	if args.KRS20AAT in line.seq:	
+		countKRS20AAT += 1
+		
+print 'KRS20AAT' , args.KRS20AAT, countKRS20AAT		
+		
+args.KRS20AAC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAAACTATTGGGCATATGCT' #sequence KRS20AAC		
+countKRS20AAC = 0		
+		
+bfKRS20AAC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20AAC:		
+	if args.KRS20AAC in line.seq:	
+		countKRS20AAC += 1
+		
+print 'KRS20AAC' , args.KRS20AAC, countKRS20AAC		
+		
+args.KRS20AAA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAAAATATTGGGCATATGCT' #sequence KRS20AAA		
+countKRS20AAA = 0		
+		
+bfKRS20AAA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20AAA:		
+	if args.KRS20AAA in line.seq:	
+		countKRS20AAA += 1
+		
+print 'KRS20AAA' , args.KRS20AAA, countKRS20AAA		
+		
+args.KRS20AAG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAAAGTATTGGGCATATGCT' #sequence KRS20AAG		
+countKRS20AAG = 0		
+		
+bfKRS20AAG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20AAG:		
+	if args.KRS20AAG in line.seq:	
+		countKRS20AAG += 1
+		
+print 'KRS20AAG' , args.KRS20AAG, countKRS20AAG		
+		
+args.KRS20GAT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGATTATTGGGCATATGCT' #sequence KRS20GAT		
+countKRS20GAT = 0		
+		
+bfKRS20GAT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GAT:		
+	if args.KRS20GAT in line.seq:	
+		countKRS20GAT += 1
+		
+print 'KRS20GAT' , args.KRS20GAT, countKRS20GAT		
+		
+args.KRS20GAC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGACTATTGGGCATATGCT' #sequence KRS20GAC		
+countKRS20GAC = 0		
+		
+bfKRS20GAC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GAC:		
+	if args.KRS20GAC in line.seq:	
+		countKRS20GAC += 1
+		
+print 'KRS20GAC' , args.KRS20GAC, countKRS20GAC		
+		
+args.KRS20GAA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGAATATTGGGCATATGCT' #sequence KRS20GAA		
+countKRS20GAA = 0		
+		
+bfKRS20GAA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GAA:		
+	if args.KRS20GAA in line.seq:	
+		countKRS20GAA += 1
+		
+print 'KRS20GAA' , args.KRS20GAA, countKRS20GAA		
+		
+args.KRS20GAG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGAGTATTGGGCATATGCT' #sequence KRS20GAG		
+countKRS20GAG = 0		
+		
+bfKRS20GAG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GAG:		
+	if args.KRS20GAG in line.seq:	
+		countKRS20GAG += 1
+		
+print 'KRS20GAG' , args.KRS20GAG, countKRS20GAG		
+		
+args.KRS20TGT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATGTTATTGGGCATATGCT' #sequence KRS20TGT		
+countKRS20TGT = 0		
+		
+bfKRS20TGT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TGT:		
+	if args.KRS20TGT in line.seq:	
+		countKRS20TGT += 1
+		
+print 'KRS20TGT' , args.KRS20TGT, countKRS20TGT		
+		
+args.KRS20TGC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATGCTATTGGGCATATGCT' #sequence KRS20TGC		
+countKRS20TGC = 0		
+		
+bfKRS20TGC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TGC:		
+	if args.KRS20TGC in line.seq:	
+		countKRS20TGC += 1
+		
+print 'KRS20TGC' , args.KRS20TGC, countKRS20TGC		
+		
+args.KRS20TGA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATGATATTGGGCATATGCT' #sequence KRS20TGA		
+countKRS20TGA = 0		
+		
+bfKRS20TGA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TGA:		
+	if args.KRS20TGA in line.seq:	
+		countKRS20TGA += 1
+		
+print 'KRS20TGA' , args.KRS20TGA, countKRS20TGA		
+		
+args.KRS20TGG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAATGGTATTGGGCATATGCT' #sequence KRS20TGG		
+countKRS20TGG = 0		
+		
+bfKRS20TGG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20TGG:		
+	if args.KRS20TGG in line.seq:	
+		countKRS20TGG += 1
+		
+print 'KRS20TGG' , args.KRS20TGG, countKRS20TGG		
+		
+args.KRS20CGT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACGTTATTGGGCATATGCT' #sequence KRS20CGT		
+countKRS20CGT = 0		
+		
+bfKRS20CGT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CGT:		
+	if args.KRS20CGT in line.seq:	
+		countKRS20CGT += 1
+		
+print 'KRS20CGT' , args.KRS20CGT, countKRS20CGT		
+		
+args.KRS20CGC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACGCTATTGGGCATATGCT' #sequence KRS20CGC		
+countKRS20CGC = 0		
+		
+bfKRS20CGC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CGC:		
+	if args.KRS20CGC in line.seq:	
+		countKRS20CGC += 1
+		
+print 'KRS20CGC' , args.KRS20CGC, countKRS20CGC		
+		
+args.KRS20CGA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACGATATTGGGCATATGCT' #sequence KRS20CGA		
+countKRS20CGA = 0		
+		
+bfKRS20CGA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CGA:		
+	if args.KRS20CGA in line.seq:	
+		countKRS20CGA += 1
+		
+print 'KRS20CGA' , args.KRS20CGA, countKRS20CGA		
+		
+args.KRS20CGG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAACGGTATTGGGCATATGCT' #sequence KRS20CGG		
+countKRS20CGG = 0		
+		
+bfKRS20CGG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20CGG:		
+	if args.KRS20CGG in line.seq:	
+		countKRS20CGG += 1
+		
+print 'KRS20CGG' , args.KRS20CGG, countKRS20CGG		
+		
+args.KRS20AGT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAAGTTATTGGGCATATGCT' #sequence KRS20AGT		
+countKRS20AGT = 0		
+		
+bfKRS20AGT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20AGT:		
+	if args.KRS20AGT in line.seq:	
+		countKRS20AGT += 1
+		
+print 'KRS20AGT' , args.KRS20AGT, countKRS20AGT		
+		
+args.KRS20AGC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAAGCTATTGGGCATATGCT' #sequence KRS20AGC		
+countKRS20AGC = 0		
+		
+bfKRS20AGC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20AGC:		
+	if args.KRS20AGC in line.seq:	
+		countKRS20AGC += 1
+		
+print 'KRS20AGC' , args.KRS20AGC, countKRS20AGC		
+		
+args.KRS20AGA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAAGATATTGGGCATATGCT' #sequence KRS20AGA		
+countKRS20AGA = 0		
+		
+bfKRS20AGA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20AGA:		
+	if args.KRS20AGA in line.seq:	
+		countKRS20AGA += 1
+		
+print 'KRS20AGA' , args.KRS20AGA, countKRS20AGA		
+		
+args.KRS20AGG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAAGGTATTGGGCATATGCT' #sequence KRS20AGG		
+countKRS20AGG = 0		
+		
+bfKRS20AGG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20AGG:		
+	if args.KRS20AGG in line.seq:	
+		countKRS20AGG += 1
+		
+print 'KRS20AGG' , args.KRS20AGG, countKRS20AGG		
+		
+args.KRS20GGT = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGGTTATTGGGCATATGCT' #sequence KRS20GGT		
+countKRS20GGT = 0		
+		
+bfKRS20GGT = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GGT:		
+	if args.KRS20GGT in line.seq:	
+		countKRS20GGT += 1
+		
+print 'KRS20GGT' , args.KRS20GGT, countKRS20GGT		
+		
+args.KRS20GGC = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGGCTATTGGGCATATGCT' #sequence KRS20GGC		
+countKRS20GGC = 0		
+		
+bfKRS20GGC = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GGC:		
+	if args.KRS20GGC in line.seq:	
+		countKRS20GGC += 1
+		
+print 'KRS20GGC' , args.KRS20GGC, countKRS20GGC		
+		
+args.KRS20GGA = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGGATATTGGGCATATGCT' #sequence KRS20GGA		
+countKRS20GGA = 0		
+		
+bfKRS20GGA = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GGA:		
+	if args.KRS20GGA in line.seq:	
+		countKRS20GGA += 1
+		
+print 'KRS20GGA' , args.KRS20GGA, countKRS20GGA		
+		
+args.KRS20GGG = 'TATGAAATTGGTAAAGTATTTAGAAATGAAGGTATAGATAATACACATAATCCTGAATTTACTTCGTGTGAAGGGTATTGGGCATATGCT' #sequence KRS20GGG		
+countKRS20GGG = 0		
+		
+bfKRS20GGG = pysam.Samfile(args.infile,"rb")		
+		
+for line in bfKRS20GGG:		
+	if args.KRS20GGG in line.seq:	
+		countKRS20GGG += 1
+		
+print 'KRS20GGG' , args.KRS20GGG, countKRS20GGG		
+
